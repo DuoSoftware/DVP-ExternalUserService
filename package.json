@@ -1,0 +1,25 @@
+{
+  "name": "dvp-externaluserservice",
+  "version": "1.0.0",
+  "description": "DVP-ExternalUserService",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "^1.4.4",
+    "cors": "^2.8.5",
+    "dvp-common-lite": "^1.0.1",
+    "dvp-mongomodels": "^5.4.0",
+    "errorhandler": "^1.5.1",
+    "express": "^4.17.1",
+    "express-session": "^1.17.0",
+    "passport": "^0.4.1",
+    "regex": "^0.1.1",
+    "restify": "^8.5.1",
+    "restify-jwt": "^0.4.0"
+  }
+}
