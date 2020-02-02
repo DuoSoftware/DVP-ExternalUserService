@@ -53,13 +53,6 @@ module.exports = {
   LBServer: {
     ip: "LB_FRONTEND",
     port: "LB_PORT"
-  },
-
-  ClusterName: "HOST_CLUSTER_NAME",
-  Provision: "HOST_PROVISION_MECHANISM",
-
-  ActiveDirectory: {
-    groupName: "AD_GROUPNAME"
   }
 };
 
