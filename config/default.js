@@ -27,7 +27,7 @@ module.exports = {
     profilesearch: "secondary",
     vdomain: "localhost",
     domain: "localhost",
-    port: "3638",
+    port: "9002",
     version: "1.0.0.0"
   },
   RabbitMQ: {
