@@ -43,7 +43,7 @@ module.exports = {
     dbname: "dvpdb",
     password: "",
     user: "",
-    replicaset: ""
+    type: "mongodb+srv"
   },
   LBServer: {
     ip: "LB_FRONTEND",
