@@ -11,7 +11,7 @@ var app = express();
 var logger = require('dvp-common-lite/LogHandler/CommonLogHandler.js').logger;
 var externalUserService = require("./ExternalUserService");
 var config = require('config');
-var jwt = require('restify-jwt');
+var jwt = require('express-jwt');
 var secret = require('dvp-common-lite/Authentication/Secret.js');
 var authorization = require('dvp-common-lite/Authentication/Authorization.js');
 
