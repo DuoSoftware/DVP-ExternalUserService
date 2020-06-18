@@ -1,10 +1,10 @@
 module.exports = {
   Redis: {
     mode: "instance", //instance, cluster, sentinel
-    ip: "ec2-18-189-192-150.us-east-2.compute.amazonaws.com",
+    ip: "",
     port: 6379,
-    user: "USER",
-    password: "DuoS123",
+    user: "",
+    password: "",
     sentinels: {
       hosts: "SENTNELS_URL",
       port: 16389,
@@ -13,10 +13,10 @@ module.exports = {
   },
   Security: {
     mode: "instance", //instance, cluster, sentinel
-    ip: "ec2-18-189-192-150.us-east-2.compute.amazonaws.com",
+    ip: "",
     port: 6379,
-    user: "USER",
-    password: "DuoS123",
+    user: "",
+    password: "",
     sentinels: {
       hosts: "SENTNELS_URL",
       port: 16389,
@@ -31,19 +31,19 @@ module.exports = {
     version: "1.0.0.0"
   },
   RabbitMQ: {
-    ip: "ec2-18-189-192-150.us-east-2.compute.amazonaws.com",
+    ip: "",
     port: 5672,
-    user: "duo",
-    password: "DuoS123",
+    user: "",
+    password: "",
     vhost: "/"
   },
   Mongo: {
-    ip: "ec2-18-189-192-150.us-east-2.compute.amazonaws.com",
-    port: "27017",
+    ip: "",
+    port: "",
     dbname: "dvpdb",
-    password: "DuoS123",
-    user: "duo",
-    replicaset: ""
+    password: "",
+    user: "",
+    type: "mongodb+srv"
   },
   LBServer: {
     ip: "LB_FRONTEND",

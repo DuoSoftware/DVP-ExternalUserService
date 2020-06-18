@@ -11,7 +11,7 @@ var app = express();
 var logger = require('dvp-common-lite/LogHandler/CommonLogHandler.js').logger;
 var externalUserService = require("./ExternalUserService");
 var config = require('config');
-var jwt = require('restify-jwt');
+var jwt = require('express-jwt');
 var secret = require('dvp-common-lite/Authentication/Secret.js');
 var authorization = require('dvp-common-lite/Authentication/Authorization.js');
 
@@ -20,6 +20,18 @@ var healthcheck = require('dvp-healthcheck/DBHealthChecker');
 
 var port = config.Host.port || 3000;
 var host = config.Host.vdomain || 'localhost';
+
+process.on("uncaughtException", function(err) {
+  console.error(err);
+  console.log("[Unhandled Exception] Node Exiting...");
+  process.exit(1);
+});
+
+process.on("unhandledRejection", err => {
+  console.error(err);
+  console.log("[Unhandled Rejection] Node Exiting...");
+  process.exit(1);
+});
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
